@@ -1,6 +1,6 @@
 # Windows下删除大量文件的快速方法
 
-http://blchen.com/fareast-way-to-delete-a-folder-contains-large-number-of-files-in-windows/
+[http://blchen.com/fareast-way-to-delete-a-folder-contains-large-number-of-files-in-windows/](http://blchen.com/fareast-way-to-delete-a-folder-contains-large-number-of-files-in-windows/)
 
 在Windows下删除文件夹有很多方法，比如拖到回收站，Shift+Del直接跳过回收站删除，命令行方式下用rs /s/q，等等等等。但是如果要删除的是一个包含巨多文件的文件夹，那上面这几个方式就不够好用了。直接删除文件夹，Windows就会先傻傻先浪费几个小时计算这个文件夹的大小，然后才提示你时候删除。
 
@@ -50,9 +50,7 @@ RD [/S] [/Q] [drive:]path
     /Q      安静模式，带 /S 删除目录树时不要求确认
 ```
 
-
-
 究竟多块？测试下来，对于大小在几十G，包含数十万小文件的文件夹，耗时大概是rd /s/q的一半。
 
-推荐使用[rmdir](http://lovesoo.org/tag/rmdir)，比[del](http://lovesoo.org/tag/del)效率更高。
+**推荐使用rmdir，比del效率更高。**
 
