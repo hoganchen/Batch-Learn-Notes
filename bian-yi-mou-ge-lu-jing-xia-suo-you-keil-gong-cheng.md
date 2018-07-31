@@ -1,4 +1,4 @@
-### 命令行编译某个路径下所有keil工程
+### For语句的用法
 
     @echo off
     set PATH=%PATH%;C:\Keil_v5\UV4;C:\Keil_v5\ARM\ARMCC\Bin;
