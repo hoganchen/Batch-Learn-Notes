@@ -7,4 +7,5 @@
 * [For语句的用法](bian-yi-mou-ge-lu-jing-xia-suo-you-keil-gong-cheng.md)
 * [命令行编译某个路径下所有的Keil工程](ming-ling-xing-bian-yi-mou-ge-lu-jing-xia-suo-you-de-keil-gong-cheng.md)
 * [清空Temp文件夹](qing-kong-temp-wen-jian-jia.md)
+* [For语句变量扩展的用法01](foryu-ju-bian-liang-kuo-zhan-de-yong-fa-01.md)
 
