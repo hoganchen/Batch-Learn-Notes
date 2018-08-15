@@ -40,9 +40,14 @@ for /f "delims==" %%i in ('dir C:\WINDOWS\system32\notepad.exe /b') do echo 扩�
 for /f "delims==" %%i in ('dir C:\WINDOWS\system32\notepad.exe /b') do echo 扩展变量到~dp$PATH:I %%~dp$PATH:i --查找列在路径环境变量的目录，并将变量扩充到找到的第一个驱动器号和路径
 for /f "delims==" %%i in ('dir C:\WINDOWS\system32\notepad.exe /b') do echo 扩展变量到~ftzaI %%~ftzai --将变量扩充到类似输出线路的DIR
 Pause
+```
 
+**注意输出结果中，第二次for循环变量扩展中的变量还是用的第一次for循环的变量，待确认原因**
 
-Output：
+输出如下:
+
+```
+
 C:\Users\hoganchen\Desktop>for_extended.bat
 ---显示"dir C:\Users\hoganchen\desktop\desktop.ini /b /ah"
 不扩展变量 desktop.ini
