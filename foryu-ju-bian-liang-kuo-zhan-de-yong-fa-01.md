@@ -47,8 +47,27 @@ Pause
 输出如下:
 
 ```
-
 C:\Users\hoganchen\Desktop>for_extended.bat
+---显示"dir C:\pagefile.sys /b /ah"
+不扩展变量 pagefile.sys
+扩展变量到~fI C:\Users\hoganchen\Desktop\pagefile.sys --扩充到一个完全合格的路径名
+扩展变量到~dI C: --仅将变量扩充到一个驱动器号
+扩展变量到~pI \Users\hoganchen\Desktop\ --仅将变量扩充到一个路径
+扩展变量到~nI pagefile --仅将变量扩充到一个文件名
+扩展变量到~xI .sys --仅将变量扩充到一个文件扩展名
+扩展变量到~sI C:\Users\CHENLI~1\Desktop\pagefile.sys --扩充的路径只含有短名
+扩展变量到~aI  --将变量扩充到文件的文件属性
+扩展变量到~tI  --将变量扩充到文件的日期/时间
+扩展变量到~zI  --将变量扩充到文件的大小
+扩展变量到~$PATH:I  --查找列在路径环境变量的目录，并将变量扩充到找到的第一个完全合格的名称
+---以下显示组合修饰符来得到多重结果---：
+扩展变量到~dpI C:\Users\hoganchen\Desktop\ --仅将变量扩充到一个驱动器号和路径
+扩展变量到~nxI pagefile.sys --仅将变量扩充到一个文件名和扩展名
+扩展变量到~fsI C:\Users\CHENLI~1\Desktop\pagefile.sys --仅将变量扩充到一个带有短名的完整路径名
+扩展变量到~dp$PATH:I  --查找列在路径环境变量的目录，并将变量扩充到找到的第一个驱动器号和路径
+扩展变量到~ftzaI C:\Users\hoganchen\Desktop\pagefile.sys --将变量扩充到类似输出线路的DIR
+
+
 ---显示"dir C:\Users\hoganchen\desktop\desktop.ini /b /ah"
 不扩展变量 desktop.ini
 扩展变量到~fI C:\Users\hoganchen\Desktop\desktop.ini --扩充到一个完全合格的路径名
@@ -67,6 +86,7 @@ C:\Users\hoganchen\Desktop>for_extended.bat
 扩展变量到~fsI C:\Users\CHENLI~1\Desktop\desktop.ini --仅将变量扩充到一个带有短名的完整路径名
 扩展变量到~dp$PATH:I C:\Windows\System32\ --查找列在路径环境变量的目录，并将变量扩充到找到的第一个驱动器号和路径
 扩展变量到~ftzaI --ahs---- 2017/09/19 09:09 282 C:\Users\hoganchen\Desktop\desktop.ini --将变量扩充到类似输出线路的DIR
+
 
 ---显示"dir C:\WINDOWS\system32\notepad.exe /b"
 不扩展变量 notepad.exe
@@ -87,6 +107,7 @@ C:\Users\hoganchen\Desktop>for_extended.bat
 扩展变量到~dp$PATH:I C:\Windows\System32\ --查找列在路径环境变量的目录，并将变量扩充到找到的第一个驱动器号和路径
 扩展变量到~ftzaI C:\Users\hoganchen\Desktop\notepad.exe --将变量扩充到类似输出线路的DIR
 请按任意键继续. . .
+
 ```
 
 
