@@ -16,7 +16,7 @@ cd /d ..\..\new_app\projects\ble\ble_peripheral
 for /f %%i in ('dir *.uvprojx /s /b') do (
     cd /d %%~dpi
 
-    for /f "delims=<> tokens=3" %%k in ('findstr "<TargetName>" %%~nxi') do
+    for /f "delims=<> tokens=3" %%k in ('findstr "<TargetName>" %%~nxi') do (
         echo %%~dpi
 
         echo %%i | findstr /i "Keil_5_sym" > nul
