@@ -10,4 +10,5 @@
 * [For语句变量扩展的用法01](foryu-ju-bian-liang-kuo-zhan-de-yong-fa-01.md)
 * [For语句变量扩展的用法之修改文件名](foryu-ju-bian-liang-kuo-zhan-de-yong-fa-zhi-xiu-gai-wen-jian-ming.md)
 * [For语句变量延迟扩展的用法01](foryu-ju-bian-liang-yan-chi-kuo-zhan-de-yong-fa-01.md)
+* [For语句变量延迟扩展的用法02](foryu-ju-bian-liang-yan-chi-kuo-zhan-de-yong-fa-02.md)
 
