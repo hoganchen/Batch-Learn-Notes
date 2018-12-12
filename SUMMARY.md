@@ -12,4 +12,5 @@
 * [For语句变量延迟扩展的用法01](foryu-ju-bian-liang-yan-chi-kuo-zhan-de-yong-fa-01.md)
 * [For语句变量延迟扩展的用法02](foryu-ju-bian-liang-yan-chi-kuo-zhan-de-yong-fa-02.md)
 * [del命令不回显](delming-ling-bu-hui-xian.md)
+* [查找当前目录下所有的子目录](cha-zhao-dang-qian-mu-lu-xia-suo-you-de-zi-mu-lu.md)
 
