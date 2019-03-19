@@ -26,5 +26,11 @@ cd /d %pwd%
 pause
 ```
 
+```
+if exist build_logs (
+    del /s /q build_logs
+)
+```
+
 
 
