@@ -14,4 +14,5 @@
 * [del命令不回显](delming-ling-bu-hui-xian.md)
 * [查找当前目录下所有的子目录](cha-zhao-dang-qian-mu-lu-xia-suo-you-de-zi-mu-lu.md)
 * [Jenkins批处理执行](jenkinspi-chu-li-zhi-xing.md)
+* [计划任务之自动更新代码](ji-hua-ren-wu-zhi-zi-dong-geng-xin-dai-ma.md)
 
