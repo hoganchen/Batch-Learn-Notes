@@ -38,6 +38,7 @@ REM ) else (
 REM     set HOUR=%time:~,2%
 REM )
 
+: http://www.bathome.net/viewthread.php?tid=1439
 : http://www.bathome.net/thread-30336-1-1.html
 set HOUR=%time: =0%
 
@@ -58,7 +59,6 @@ for %%i in (%SOURCE_PATH_LIST%) do (
     svn revert --recursive  --non-interactive >> %LOG_PATH_NAME% 2>&1
     svn update >> %LOG_PATH_NAME% 2>&1
 )
-
 ```
 
 
