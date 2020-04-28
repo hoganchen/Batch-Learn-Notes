@@ -17,4 +17,5 @@
 * [计划任务之自动更新代码](ji-hua-ren-wu-zhi-zi-dong-geng-xin-dai-ma.md)
 * [批处理之多行注释](pi-chu-li-zhi-duo-xing-zhu-shi.md)
 * [判断CMD命令是否正确执行](pan-duan-cmd-ming-ling-shi-fou-zheng-que-zhi-xing.md)
+* [Find xargs用法](find-xargsyong-fa.md)
 
