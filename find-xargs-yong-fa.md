@@ -9,4 +9,7 @@ $ find ./ -name *.bat | xargs grep python | wc -l
 $ find ./ -name *.bat | grep python | wc -l
 0
 
+grep加上-v参数是不包含的意思
+$ find ./ -name *.bat | xargs grep python | grep -v "python -u" | wc -l
+61
 ```
