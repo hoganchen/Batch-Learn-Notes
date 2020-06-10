@@ -38,5 +38,28 @@ for /f %%i in ('dir *.uvprojx /s /b') do (
 pause
 ```
 
+```
+@echo off
+setlocal enabledelayedexpansion
 
+rem https://www.cnblogs.com/ini_always/archive/2012/02/16/2355031.html
+rem http://www.bathome.net/thread-43675-1-1.html
+
+set count=100
+set HOUR=%time: =0%
+
+for /l %%j in (1 1 %count%) do (
+    echo Start to run pts test...
+    PTSControlClient.exe gap_debug.xml COM28 0 > pts_test_%date:~0,4%%date:~5,2%%date:~8,2%%HOUR:~0,2%%time:~3,2%%time:~6,2%.log 2>&1
+
+	move /Y Logs\GAP_CONN_GCEP_BV-01-C_test.log Logs\GAP_CONN_GCEP_BV-01-C_test_!date:~0,4!!date:~5,2!!date:~8,2!!HOUR:~0,2!!time:~3,2!!time:~6,2!.log
+	move /Y Logs\GAP_CONN_GCEP_BV-01-C_pts.log Logs\GAP_CONN_GCEP_BV-01-C_pts_!date:~0,4!!date:~5,2!!date:~8,2!!HOUR:~0,2!!time:~3,2!!time:~6,2!.log
+
+    taskkill /F /T /IM pts.exe
+    taskkill /F /T /IM fts.exe
+    taskkill /F /T /IM PTSControlClient.exe
+)
+
+pause
+```
 
