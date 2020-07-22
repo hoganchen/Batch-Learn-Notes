@@ -99,3 +99,33 @@ for /l %%j in (1 1 %count%) do (
 pause
 
 ```
+
+```
+@echo off
+REM 开启延时变量
+setlocal enabledelayedexpansion
+REM 关闭延时变量
+REM setlocal disabledelayedexpansion
+
+REM set PATH=%PATH%;C:\Anaconda3;C:\ProgramData\Anaconda3
+set PATH=%PATH%;.\venv\Scripts
+
+for /L %%i in (1,1,10) do (
+    REM 延时变量需要使用!var!的方式使用
+
+    REM 将空格替换为0，因为如果小时少于10点，小时数字的第一个字符为空格，所以将空格替换为0
+    set HOURS=!time: =0!
+
+    REM 字符串截取，针对第一个截取表达式，含义为从第0个字符开始，截取4个字符
+    set datestr=!date:~0,4!!date:~5,2!!date:~8,2!!HOURS:~0,2!!time:~3,2!!time:~6,2!
+    REM echo !datestr!
+    REM ping 127.0.0.1 -n 2 > nul
+
+    pyinstaller --clean -F -w -c map_parser.py
+    copy /y dist\map_parser.exe .\map_parser_!datestr!.exe
+)
+
+REM python map_parser.py -s D:\BALBOA_SW_CODE\00_SW\00_SW_DEV\app -d true -f true -r true > map_parser_%date:~0,4%%date:~5,2%%date:~8,2%%HOUR:~0,2%%time:~3,2%%time:~6,2%.log 2>&1
+
+pause
+```
